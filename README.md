@@ -18,6 +18,9 @@ This repository documents my **Cybersecurity HomeLab** for **penetration testing
 
 ---
 
+**Lab Setup Guide**
+You can find all the virtual machine setup file under docs file. Where i have created how you can create virtual machine and setup different operating systems. For iso's there is a iso folder. 
+
 ## 🔥 **Current Progress**
 ✅ **Configured:**
 - [x] Active Directory (Windows Server)
