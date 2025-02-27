@@ -1,59 +1,67 @@
-**Project Background: Building an Active Directory Lab with a Cybersecurity Focus
-**
+# 🏠 Cybersecurity HomeLab Setup
 
-Active Directory is a tool developed by Microsoft to simplify the management of users and assets within organizations. Today, almost every organization relies on Microsoft Active Directory for user and computer management. As a cybersecurity student and aspiring professional, I realized that learning about Active Directory hands-on would be far more beneficial than merely reading documentation and books. Hence, I decided to build an Active Directory lab from a cybersecurity perspective.
+## 📌 Overview
+This repository documents my **Cybersecurity HomeLab** for **penetration testing, security monitoring, and incident response**. The goal is to **simulate real-world attacks, detect them, and improve defensive measures**.
 
-**Benefits of Active Directory:**
+### 📍 **Network Architecture Diagram**
+![alt text](<Untitled Diagram.drawio.png>)
 
-Centralized Data Repository: Stores identity information of users, applications, and resources.
+## 🚀 **Lab Components**
+| **Component**       | **Purpose** |
+|---------------------|-------------|
+| 🛡️ **Firewall (pfSense)** | Protects network & segments traffic between LAN, DMZ, and attacker machine |
+| 🎯 **Metasploitable 2 (DMZ)** | Vulnerable machine used for **penetration testing** |
+| 🔍 **Splunk (SIEM - Ubuntu Server)** | Log collection & analysis for **attack detection** |
+| 💾 **Active Directory (Windows Server)** | Centralized authentication for Windows 10 machines |
+| 🖥️ **Windows 10 (Domain-Joined)** | Workstation used for **attack simulations** |
+| 🏴‍☠️ **Kali Linux (Attacker Machine)** | Offensive security tools for **network scanning & exploitation** |
 
-Replication of Data: Data is replicated across multiple domain controllers.
+---
 
-Security: Centralized authentication and authorization.
+## 🔥 **Current Progress**
+✅ **Configured:**
+- [x] Active Directory (Windows Server)
+- [x] Windows 10 (Domain-Joined)
+- [x] Splunk SIEM on Ubuntu Server
+- [x] Metasploitable 2 (Vulnerable Machine)
+- [x] pfSense Firewall for Network Segmentation
+- [x] Kali Linux for Attacks
 
-**Objective:**
+🔜 **Next Steps:**
+- [ ] Configure **Windows Event Forwarding to Splunk**
+- [ ] Perform **Attacks from Kali (Pass-the-Hash, Kerberoasting)**
+- [ ] Implement **Detection Rules in Splunk**
+- [ ] Set up **Snort/Suricata IDS for Network Threats**
+- [ ] Document **SIEM Dashboards & Alerts**
 
-The primary goal of this lab is to practically apply the concepts I’ve learned as a cybersecurity student. Additionally, I aim to explore how to detect various attacks using a SIEM (Security Information and Event Management) system.
+---
 
-**Tools:**
+## 🛠️ **Tools & Technologies Used**
+- **Windows Server & Active Directory**
+- **Splunk (SIEM)**
+- **pfSense Firewall**
+- **Metasploit Framework**
+- **Wireshark & Nmap**
+- **Sysmon for Windows Event Logging**
+- **Suricata/Snort for IDS/IPS**
 
-VMWare (hypervisor)
+---
 
-Windows Server 2019 (AD server)
+## 📖 **Attack & Detection Scenarios**
+### 🔴 **Planned Attacks**
+✅ **Reconnaissance:** Nmap & SMB Scanning  
+✅ **Exploitation:** Pass-the-Hash, LLMNR Poisoning  
+✅ **Privilege Escalation:** Kerberoasting, Mimikatz  
+✅ **Persistence & Lateral Movement:** PsExec, RDP Exploitation  
 
-Windows 10 (Client)
+### 🟢 **Planned Detection**
+🔹 **Splunk Alerts:** Unusual login attempts, PowerShell executions  
+🔹 **Sysmon Logs:** Process injection, Credential dumping  
+🔹 **Firewall Rules:** Blocking unauthorized traffic  
 
-Splunk on Ubuntu OS (SIEM)
+---
 
-Kali Linux (Attacker)
-
-**Background: **
-
-In this project, we’ll simulate an organization named marvel.local that supports law enforcement in saving the world. The organization comprises three departments: Avengers, Guardians, and X-Men. A competitor of marvel.localhas hired a hacker named Thanos to disrupt the organization.
-
-**Lab Setup:**
-
-Primary Domain: marvel.local
-
-Client Machine: Windows 10
-
-SIEM System: Splunk
-
-Attacker Machine: Kali Linux
-
-**Logical Diagram:**
-
-![image](https://github.com/user-attachments/assets/42bf7be6-c1db-4c8a-ad40-54dd5447c3b1)
-
-**Steps to Set Up the Lab:**
-
-Install Windows Server 2019 and Active Directory.
-
-Install Windows 10.
-
-Install Ubuntu and set up Splunk. Configure the firewall.
-
-Install Kali Linux
-
-
-  
+## 📂 **How to Use This Repo**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/homelab-setup.git
