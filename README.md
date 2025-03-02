@@ -34,6 +34,7 @@ The HomeLab consists of **multiple virtual machines**, each serving a unique rol
 | 🖥 **Windows 10 (Domain-Joined)** | Workstation for testing domain authentication |
 | 🔍 **Splunk SIEM (Ubuntu Server)** | Log collection & system monitoring |
 | 🏴‍☠️ **Kali Linux** | Used for system testing & security research |
+| 💀 **Metasploitable 2** | Used as targetted machine, deployed under dmz network | 
 
 ---
 
@@ -45,12 +46,12 @@ The HomeLab consists of **multiple virtual machines**, each serving a unique rol
 - **Splunk SIEM on Ubuntu Server**
 - **Kali Linux setup for testing**
 - **pfSense Firewall installation**
+- **Metasploitable 2 installation**
 
 🔜 **Next Steps:**
-- Configure **network segmentation & routing** in pfSense
-- Set up **DHCP & VLANs for different network zones**
-- Implement **firewall rules & security policies**
 - Connect all machines for **centralized authentication & log collection**
+- Testing Connectivity between different devices.
+- 
 
 ---
 
@@ -87,6 +88,7 @@ This repository includes documentation on **installing and configuring each virt
 - **Windows 10 (Domain-Joined)** – Endpoint Testing
 - **pfSense Firewall** – Network Security & Segmentation
 - **Splunk SIEM (Ubuntu Server)** – Security Monitoring & Log Collection
+- **Metasploitable 2** - Vulnerable machine.
 
 ---
 
