@@ -38,7 +38,6 @@ The HomeLab consists of **multiple virtual machines**, each serving a unique rol
 
 ---
 
-## 🚀 Current Progress
 ✅ **Configured:**
 - Virtualized environment using **VMware/VirtualBox**
 - **Active Directory (Windows Server)**
@@ -47,11 +46,8 @@ The HomeLab consists of **multiple virtual machines**, each serving a unique rol
 - **Kali Linux setup for testing**
 - **pfSense Firewall installation**
 - **Metasploitable 2 installation**
+- **Tested Connectivity between devices**
 
-🔜 **Next Steps:**
-- Connect all machines for **centralized authentication & log collection**
-- Testing Connectivity between different devices.
-- 
 
 ---
 
@@ -81,7 +77,13 @@ This repository includes documentation on **installing and configuring each virt
 
 📌 **For detailed instructions, check the `/docs/` folder.**
 
----
+## This repository includes a /configs directory that contains all the configuration files for the HomeLab:
+
+- Firewall Configuration
+- Group Policy Objects (GPO) Settings
+- Splunk Input Configuration: inputs.conf
+
+📌 For detailed instructions, check the /config folder.
 
 ## 🛠 Tools & Technologies Used
 - **VMware Workstation / VirtualBox** – Virtualization Platform
