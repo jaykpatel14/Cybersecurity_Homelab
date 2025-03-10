@@ -67,6 +67,7 @@ This repository includes documentation on **installing and configuring each virt
    - Install **Splunk SIEM on Ubuntu Server**.
    - Install **pfSense Firewall & configure networking**.
    - Install **Kali Linux for testing**.
+   - Install **Metasploitable 2 to demostrate dmz network**. 
 
 ### **3️⃣ Configure Network & Security Settings**
    - Assign **static IPs, subnets, and firewall rules**.
